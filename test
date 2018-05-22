@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+swipl -s main_spec.pl -t run_specs -q
