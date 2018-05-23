@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+nodemon -q -w . -e pl -x './scripts/test'

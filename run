@@ -1,3 +1,0 @@
-#!/usr/bin/env zsh
-
-swipl -s $0:a:h/main.pl -g main -t halt -q
