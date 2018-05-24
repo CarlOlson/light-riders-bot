@@ -6,9 +6,7 @@
 
 it("should parse arbitrary settings") :-
     string_to_list("settings key value\n", List),
-    phrase(game, List),
-    settings(key:Value),
-    Value = "value".
+    phrase(game, List).
 
 it("should parse botid setting") :-
     string_to_list("settings your_botid 999\n", List),
