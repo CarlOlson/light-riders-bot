@@ -9,7 +9,7 @@ game_phrase(String) :-
 :- describe(main).
 
 it("should not fail on unrecognized lines") :-
-    game_phrase("this is not valid\n").
+    game_phrase("settings invalid\nupdate invalid\action invalid\n").
 
 it("should parse botid setting") :-
     game_phrase("settings your_botid 999\n"),

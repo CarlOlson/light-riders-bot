@@ -26,4 +26,4 @@ visit_move(_Time) :-
 moves([left, right, up, down]).
 
 main :-
-  phrase_from_stream(game, current_input).
+    phrase_from_stream(game, current_input).

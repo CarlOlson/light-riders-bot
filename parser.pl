@@ -5,18 +5,18 @@ game --> commands, eos.
 
 commands --> command, nl, commands.
 commands --> command, nl.
-commands --> string_without("\n", _), nl.
 
 command --> settings.
 command --> update.
 command --> move.
+command --> ("settings"; "update"; "action"), string_without("\n", _).
 
 settings --> "settings your_botid ", integer(Id),
 	     {
 		 visit_settings(your_botid, Id)
 	     }.
 
-update --> "update game field ", string(Field),
+update --> "update game field ", string_without("\n", Field),
            {
 	       visit_update(field, Field)
 	   }.
